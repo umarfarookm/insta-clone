@@ -1,0 +1,101 @@
+<ion-header>
+  <ion-toolbar class="insta-feed-header">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="camera"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="insta-font" >
+      Instaclone
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="tv"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="paper-plane"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-segment scrollable class="status-wrapper">
+
+    <ion-segment-button class="status-item own-status">
+      <ion-avatar>
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-avatar>
+      <ion-label>Your story</ion-label>
+      <ion-icon name="add" class="plus-icon"></ion-icon>
+    </ion-segment-button>
+
+    <ion-segment-button *ngFor="let status of statusList" class="status-item other-status">
+        <ion-avatar>
+          <img [src]="status.imageUrl">
+        </ion-avatar>
+        <ion-label>{{status.name}}</ion-label>
+    </ion-segment-button>
+
+  </ion-segment>
+
+  <ion-card class="feed-card" *ngFor="let feed of feedList">
+      <ion-card-content class="feed-user-wrapper">
+        <div class="ion-align-items-center user-image-wrapper">
+          <img [src]="feed.userImage">
+        </div>
+        <div class="user-details">
+          <p class="user-name">{{feed.userName}}</p>
+          <p class="user-place">{{feed.userPlace}}</p>
+        </div>
+        <ion-buttons slot="end">
+          <ion-button>
+            <ion-icon name="more"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-card-content>
+      <div class="feed-slides-wrapper">
+
+        <ion-slides pager="true" [options]="slideOpts" class="feed-slides">
+          <ion-slide *ngFor="let slide of feed.slides">
+            <img [src]="slide.image"/>
+          </ion-slide>
+        </ion-slides>
+
+        <div class="feed-btn-wrapper">
+          <ion-buttons class="ion-float-left">
+            <ion-button>
+              <ion-icon name="heart-empty"></ion-icon>
+            </ion-button>
+            <ion-button>
+              <ion-icon name="chatbubbles"></ion-icon>
+            </ion-button>
+            <ion-button>
+              <ion-icon name="paper-plane"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+
+          <ion-buttons class="ion-float-right">
+            <ion-button>
+              <ion-icon name="bookmark"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </div>
+      </div>
+      <ion-card-content class="feed-details-container">
+        <p> <strong>{{feed.likes}} likes</strong> </p>
+        <p class="user-given-details">
+          <ion-avatar>
+            <img [src]="feed.userImage">
+          </ion-avatar>
+          <strong class="user-name">{{feed.userName}} </strong>
+          <span class="feed-text">{{feed.feedText}}</span>
+          <span class="grey-text"> more</span>
+        </p>
+        <p class="all-comments"> <span class="grey-text">View All Comments</span></p>
+        <p class="post-time"> <span class="grey-text">{{feed.time}}</span></p>
+      </ion-card-content>
+    </ion-card>
+
+</ion-content>

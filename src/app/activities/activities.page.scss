@@ -1,0 +1,14 @@
+.activity-wrapper{
+  ion-list-header{
+    font-weight: 500;
+    font-size: 15px;
+  }
+  ion-item{
+    --inner-border-width: 0;
+    ion-avatar{
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+

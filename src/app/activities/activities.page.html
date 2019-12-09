@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Activity
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list class="activity-wrapper">
+    <div *ngFor="let activityByTime of activitiesByTime">
+      <ion-list-header>
+        {{activityByTime.time}}
+      </ion-list-header>
+      <ion-item  *ngFor="let activity of activityByTime.activities">
+        <ion-avatar slot="start">
+          <img [src]="activity.imageUrl">
+        </ion-avatar>
+        <ion-label>
+          <h3>{{activity.userDetail}}</h3>
+          <p>{{activity.description}}</p>
+        </ion-label>
+      </ion-item>
+    </div>
+    <div>
+      <ion-list-header>
+        {{suggestion.header}}
+      </ion-list-header>nvm
+      <ion-item  *ngFor="let user of suggestion.users">
+        <ion-avatar slot="start">
+          <img [src]="user.imageUrl">
+        </ion-avatar>
+        <ion-label>
+          <h3>{{user.userName}}</h3>
+          <p>{{user.name}}</p>
+        </ion-label>
+        <ion-buttons slot="end">
+          <ion-button class="ion-color-primary">Follow</ion-button>
+          <ion-icon name="more"></ion-icon>
+        </ion-buttons>
+      </ion-item>
+    </div>
+  </ion-list>
+</ion-content>

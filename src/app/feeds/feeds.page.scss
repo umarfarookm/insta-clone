@@ -1,0 +1,142 @@
+.feed-card {
+  margin: 0;
+  box-shadow: none;
+  .feed-user-wrapper{
+    display: flex;
+    padding: 5px 16px;
+    .user-image-wrapper{
+      border-radius: 50%;
+      border: 2px solid lightcoral;
+      height: 48px;
+      img{
+        width: 42px;
+        height: 100%;
+        border-radius: 50%;
+        border: 2px solid white;
+        max-width: none;
+      }
+    }
+    .user-details{
+      margin-left: 10px;
+      width: 100%;
+      .user-name{
+        font-size: 14px;
+        margin: 5px 0;
+        font-weight: 500;
+      }
+      .user-place{
+        font-size: 12px;
+      }
+    }
+  }
+  .feed-slides-wrapper{
+    position: relative;
+    .feed-slides{
+      padding-bottom: 40px;
+      --bullet-background: var(--ion-color-light-contrast);
+    }
+    .feed-btn-wrapper{
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      padding: 0 3px;
+      .ion-float-left{
+        ion-button{
+             --padding-end: 0;
+        }
+      }
+      ion-icon{
+        font-size: 24px;
+      }
+    }
+  }
+  .feed-details-container{
+    color: var(--ion-color-dark);
+    .grey-text{
+      color: var(--ion-color-medium);
+    }
+    .user-given-details{
+      display: flex;
+      .user-name{
+        margin-right: 5px;
+      }
+      ion-avatar{
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+        margin-top: 3px;
+      }
+      .feed-text{
+        margin-right: 5px;
+      }
+    }
+    .all-comments{
+      margin-top: 5px;
+      font-size: 13px;
+    }
+    .post-time{
+      margin-top: 5px;
+      font-size: 10px;
+    }
+  }
+}
+
+.insta-feed-header {
+  ion-icon{
+    font-size: 28px;
+  }
+  .insta-font{
+    font-family: 'Grand Hotel', cursive;
+    font-size: 28px;
+  }
+}
+
+.status-wrapper{
+  border-bottom: 1px solid #f3f3f3;
+  padding: 10px 5px 0 5px;
+  .own-status{
+    position: relative;
+    .plus-icon{
+      position: absolute;
+      bottom: 25px;
+      right: 20px;
+      background: var(--ion-color-primary);
+      color: white;
+      border-radius: 50%;
+      border: 2px solid white;
+      font-size: 13px;
+    }
+  }
+  .status-item{
+    --padding-end: 0;
+    --padding-start: 0;
+    --color-checked: transparent;
+    --border-color: transparent;
+    &.other-status{
+      ion-avatar{
+        width: 52px;
+        height: 52px;
+        border: 2px solid lightcoral;
+        img{
+          border: 2px solid white;
+        }
+      }
+    }
+    padding: 0;
+    ion-avatar{
+      width: 48px;
+      height: 48px;
+    }
+    ion-label{
+      width: 80px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      font-size: 9px;
+      text-transform: none;
+      color: black;
+      margin: 5px 0 0 0;
+    }
+  }
+}
+
