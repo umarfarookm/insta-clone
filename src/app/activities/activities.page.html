@@ -17,15 +17,14 @@
           <img [src]="activity.imageUrl">
         </ion-avatar>
         <ion-label>
-          <h3>{{activity.userDetail}}</h3>
-          <p>{{activity.description}}</p>
+          <p> <strong>{{activity.userDetail}}</strong> {{activity.description}}</p>
         </ion-label>
       </ion-item>
     </div>
-    <div>
+    <div class="suggestion-container">
       <ion-list-header>
         {{suggestion.header}}
-      </ion-list-header>nvm
+      </ion-list-header>
       <ion-item  *ngFor="let user of suggestion.users">
         <ion-avatar slot="start">
           <img [src]="user.imageUrl">
@@ -35,7 +34,7 @@
           <p>{{user.name}}</p>
         </ion-label>
         <ion-buttons slot="end">
-          <ion-button class="ion-color-primary">Follow</ion-button>
+          <ion-button size="small" color="primary" fill="solid">Follow</ion-button>
           <ion-icon name="more"></ion-icon>
         </ion-buttons>
       </ion-item>

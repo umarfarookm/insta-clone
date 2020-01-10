@@ -6,8 +6,22 @@
   ion-item{
     --inner-border-width: 0;
     ion-avatar{
-      width: 32px;
-      height: 32px;
+      width: 42px;
+      height: 42px;
+    }
+  }
+  ion-label{
+    p{
+      font-size: 13px;
+      white-space: normal;
+      color: var(--ion-color-dark);
+    }
+  }
+  .suggestion-container{
+    ion-button{
+      height: 24px;
+      font-size: 12px;
+      text-transform: capitalize;
     }
   }
 }

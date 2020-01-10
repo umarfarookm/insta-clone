@@ -12,9 +12,10 @@ export class ActivitiesPage {
             time: 'Last Week',
             activities: [
                 {
-                    imageUrl: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y',
-                    userDetail: 'Item Avatar',
-                    description: 'Listen, I\'ve had a pretty messed'
+                    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbgRz3TYR0yIMijWAG4yM-wFl_SCit8aGNldLahP3kEIH1ODFx',
+                    userDetail: 'John Watson and Warner Lin',
+                    description: 'and others shared 10 photos',
+                    time:'2m ago'
                 }
             ]
         },
@@ -22,19 +23,22 @@ export class ActivitiesPage {
             time: 'Last Month',
             activities: [
                 {
-                    imageUrl: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y',
-                    userDetail: 'Item Avatar',
-                    description: 'Listen, I\'ve had a pretty messed'
+                    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_ilM7E3aZocNUE01o1Gd-zd7A8668HlWeIblKAqGLcG-2OO0o',
+                    userDetail: 'David Nick and Henderson',
+                    description: 'and others shared 6 photos',
+                    time:'2w ago'
                 },
                 {
-                    imageUrl: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y',
-                    userDetail: 'Item Avatar',
-                    description: 'Listen, I\'ve had a pretty messed'
+                    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_ilM7E3aZocNUE01o1Gd-zd7A8668HlWeIblKAqGLcG-2OO0o',
+                    userDetail: 'John Watson and Warner Lin',
+                    description: 'and others shared 2 photos',
+                    time:'2w ago'
                 },
                 {
-                    imageUrl: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y',
-                    userDetail: 'Item Avatar',
-                    description: 'Listen, I\'ve had a pretty messed'
+                    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbgRz3TYR0yIMijWAG4yM-wFl_SCit8aGNldLahP3kEIH1ODFx',
+                    userDetail: 'David Nick and Henderson',
+                    description: 'and others shared 9 photos',
+                    time:'3w ago'
                 }
             ]
         },
@@ -42,29 +46,22 @@ export class ActivitiesPage {
             time: 'Earlier',
             activities: [
                 {
-                    imageUrl: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y',
-                    userDetail: 'Item Avatar',
-                    description: 'Listen, I\'ve had a pretty messed'
+                    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_ilM7E3aZocNUE01o1Gd-zd7A8668HlWeIblKAqGLcG-2OO0o',
+                    userDetail: 'John Watson and Warner Lin',
+                    description: 'and others shared 2 videos',
+                    time:'3mo ago'
                 },
                 {
-                    imageUrl: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y',
-                    userDetail: 'Item Avatar',
-                    description: 'Listen, I\'ve had a pretty messed'
+                    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbgRz3TYR0yIMijWAG4yM-wFl_SCit8aGNldLahP3kEIH1ODFx',
+                    userDetail: 'David Nick and Henderson',
+                    description: 'and others shared 3 photos',
+                    time:'5mo ago'
                 },
                 {
-                    imageUrl: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y',
-                    userDetail: 'Item Avatar',
-                    description: 'Listen, I\'ve had a pretty messed'
-                },
-                {
-                    imageUrl: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y',
-                    userDetail: 'Item Avatar',
-                    description: 'Listen, I\'ve had a pretty messed'
-                },
-                {
-                    imageUrl: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y',
-                    userDetail: 'Item Avatar',
-                    description: 'Listen, I\'ve had a pretty messed'
+                    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbgRz3TYR0yIMijWAG4yM-wFl_SCit8aGNldLahP3kEIH1ODFx',
+                    userDetail: 'David Nick and Henderson',
+                    description: 'and others shared 9 videos',
+                    time:'6mo ago'
                 }
             ]
         }
@@ -75,14 +72,23 @@ export class ActivitiesPage {
         users: [
             {
                 imageUrl: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y',
-                userName: 'username1',
-                name: 'Full Name 1',
+                userName: 'jackson',
+                name: 'Nick Jack',
+                time:'3m ago',
                 follow: false
             },
             {
                 imageUrl: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y',
-                userName: 'username2',
-                name: 'Full Name 2',
+                userName: 'anderson',
+                name: 'Micheal Andrew',
+                time:'3w ago',
+                follow: false
+            },
+            {
+                imageUrl: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y',
+                userName: 'muhammed',
+                name: 'Muhammed Sathik',
+                time:'6mo ago',
                 follow: false
             }
         ]
